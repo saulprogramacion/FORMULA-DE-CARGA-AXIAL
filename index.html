@@ -1,0 +1,23 @@
+<!-- HTML -->
+<div class="container">
+  <h1>Carga Axial Crítica de Euler</h1>
+  <form id="eulerForm">
+    <label for="E">Módulo de Elasticidad E (Pa):</label>
+    <input type="number" id="E" required />
+
+    <label for="I">Momento de Inercia I (m⁴):</label>
+    <input type="number" id="I" step="any" required />
+
+    <label for="L">Longitud de la Columna L (m):</label>
+    <input type="number" id="L" step="any" required />
+
+    <label for="K">Factor de longitud efectiva K:</label>
+    <input type="number" id="K" step="any" value="1" required />
+
+    <button type="submit">Calcular</button>
+    <button type="button" id="reset">Reestablecer</button>
+  </form>
+
+  <div id="resultado"></div>
+  <canvas id="grafico" width="400" height="300"></canvas>
+</div>
